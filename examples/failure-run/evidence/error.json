@@ -1,0 +1,11 @@
+{
+  "stage": "submit",
+  "error": "ResolveError: could not resolve form.submit ()",
+  "resolver_attempts": [
+    {
+      "target": "form.submit",
+      "winner": null,
+      "attempts": []
+    }
+  ]
+}

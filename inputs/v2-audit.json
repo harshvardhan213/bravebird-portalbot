@@ -1,0 +1,16 @@
+{
+  "portal": "github",
+  "repo": "harshvardhan213/demo",
+  "workflow": "Generate report",
+  "branch": "v2",
+  "fields": {
+    "report_type": "audit",
+    "month": "2026-08",
+    "customer": "globex",
+    "region": "eu"
+  },
+  "capture": {
+    "artifact": true,
+    "print_run_page": false
+  }
+}

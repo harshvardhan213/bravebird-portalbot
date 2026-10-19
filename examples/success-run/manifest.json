@@ -1,0 +1,128 @@
+{
+  "run_id": "20261019-182323-16082e",
+  "status": "ok",
+  "started_at": "2026-10-19T12:53:23.590+00:00",
+  "finished_at": "2026-10-19T12:53:50.632+00:00",
+  "duration_ms": 27042,
+  "input_file": "inputs/main-statement.json",
+  "inputs": {
+    "portal": "github",
+    "repo": "[REDACTED]/demo",
+    "workflow": "Generate report",
+    "branch": "main",
+    "fields": {
+      "report_type": "statement",
+      "month": "2026-08",
+      "customer": "globex"
+    },
+    "capture": {
+      "artifact": true,
+      "print_run_page": false
+    }
+  },
+  "session": "reused",
+  "pages_visited": [
+    {
+      "url": "https://github.com/settings/profile",
+      "title": null,
+      "at": "2026-10-19T12:53:25.392+00:00"
+    },
+    {
+      "url": "https://github.com/[REDACTED]/demo",
+      "title": null,
+      "at": "2026-10-19T12:53:27.629+00:00"
+    },
+    {
+      "url": "https://github.com/[REDACTED]/demo/actions",
+      "title": null,
+      "at": "2026-10-19T12:53:28.649+00:00"
+    },
+    {
+      "url": "https://github.com/[REDACTED]/demo/actions/workflows/generate-report.yml",
+      "title": null,
+      "at": "2026-10-19T12:53:29.005+00:00"
+    },
+    {
+      "url": "https://github.com/[REDACTED]/demo/actions/runs/39255596622",
+      "title": null,
+      "at": "2026-10-19T12:53:34.888+00:00"
+    },
+    {
+      "url": "https://github.com/[REDACTED]/demo/actions/workflows/generate-report.yml",
+      "title": null,
+      "at": "2026-10-19T12:53:35.601+00:00"
+    },
+    {
+      "url": "https://github.com/[REDACTED]/demo/actions/runs/39255596622",
+      "title": null,
+      "at": "2026-10-19T12:53:48.209+00:00"
+    }
+  ],
+  "stages": [
+    {
+      "key": "session",
+      "status": "ok",
+      "started_at": "2026-10-19T12:53:23.707+00:00",
+      "duration_ms": 3177,
+      "attempts": 0
+    },
+    {
+      "key": "navigate",
+      "status": "ok",
+      "started_at": "2026-10-19T12:53:26.884+00:00",
+      "duration_ms": 2130,
+      "attempts": 0
+    },
+    {
+      "key": "fill_form",
+      "status": "ok",
+      "started_at": "2026-10-19T12:53:29.016+00:00",
+      "duration_ms": 1964,
+      "attempts": 0
+    },
+    {
+      "key": "submit",
+      "status": "ok",
+      "started_at": "2026-10-19T12:53:30.981+00:00",
+      "duration_ms": 3972,
+      "attempts": 0
+    },
+    {
+      "key": "wait_run",
+      "status": "ok",
+      "started_at": "2026-10-19T12:53:34.953+00:00",
+      "duration_ms": 12571,
+      "attempts": 0
+    },
+    {
+      "key": "capture",
+      "status": "ok",
+      "started_at": "2026-10-19T12:53:47.524+00:00",
+      "duration_ms": 3107,
+      "attempts": 0
+    }
+  ],
+  "files": [
+    {
+      "path": "files/report-statement-2026-08.zip",
+      "kind": "zip",
+      "source": "download",
+      "bytes": 1454,
+      "sha256": "b902e592bba16bb559c13fdfcc5f26951334246812b67b87946fa2e59cab472a"
+    },
+    {
+      "path": "files/report-statement-2026-08.pdf",
+      "kind": "pdf",
+      "source": "download (unzipped)",
+      "bytes": 2107,
+      "sha256": "9a35bd8fe06dc709abac96a6c61b7ea472f0d59285d065567105b7367b3d6d76"
+    }
+  ],
+  "error": null,
+  "workflow_run": {
+    "id": 39255596622,
+    "url": "https://github.com/[REDACTED]/demo/actions/runs/39255596622",
+    "status": "completed successfully",
+    "title": "statement 2026-08 globex"
+  }
+}

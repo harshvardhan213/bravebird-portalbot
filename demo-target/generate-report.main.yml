@@ -1,0 +1,48 @@
+name: Generate report
+
+on:
+  workflow_dispatch:
+    inputs:
+      report_type:
+        description: Report type
+        type: choice
+        required: true
+        default: invoice
+        options:
+          - invoice
+          - statement
+          - summary
+      month:
+        description: Billing month (YYYY-MM)
+        type: string
+        required: true
+        default: "2026-09"
+      customer:
+        description: Customer name
+        type: string
+        required: true
+        default: acme
+
+run-name: ${{ inputs.report_type }} ${{ inputs.month }} ${{ inputs.customer }}
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install reportlab
+      - name: Render PDF
+        run: >
+          python scripts/generate_report.py
+          --report-type "${{ inputs.report_type }}"
+          --month "${{ inputs.month }}"
+          --customer "${{ inputs.customer }}"
+          --variant main
+          --out out/report-${{ inputs.report_type }}-${{ inputs.month }}.pdf
+      - uses: actions/upload-artifact@v4
+        with:
+          name: report-${{ inputs.report_type }}-${{ inputs.month }}
+          path: out/*.pdf

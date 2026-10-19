@@ -1,0 +1,11 @@
+{
+  "repo": "harshvardhan213/demo",
+  "workflow": "Generate report",
+  "branch": "main",
+  "fields": {
+    "report_type": "summary",
+    "month": "2026-07",
+    "customer": "initech"
+  },
+  "break": "form.submit"
+}

@@ -1,0 +1,75 @@
+{
+  "run_id": "20261019-182350-d44752",
+  "status": "failed",
+  "started_at": "2026-10-19T12:53:50.830+00:00",
+  "finished_at": "2026-10-19T12:54:05.164+00:00",
+  "duration_ms": 14334,
+  "input_file": "inputs/demo-broken-step.json",
+  "inputs": {
+    "repo": "[REDACTED]/demo",
+    "workflow": "Generate report",
+    "branch": "main",
+    "fields": {
+      "report_type": "summary",
+      "month": "2026-07",
+      "customer": "initech"
+    },
+    "break": "form.submit"
+  },
+  "session": "reused",
+  "pages_visited": [
+    {
+      "url": "https://github.com/settings/profile",
+      "title": null,
+      "at": "2026-10-19T12:53:52.197+00:00"
+    },
+    {
+      "url": "https://github.com/[REDACTED]/demo",
+      "title": null,
+      "at": "2026-10-19T12:53:53.352+00:00"
+    },
+    {
+      "url": "https://github.com/[REDACTED]/demo/actions",
+      "title": null,
+      "at": "2026-10-19T12:53:54.397+00:00"
+    },
+    {
+      "url": "https://github.com/[REDACTED]/demo/actions/workflows/generate-report.yml",
+      "title": null,
+      "at": "2026-10-19T12:53:54.885+00:00"
+    }
+  ],
+  "stages": [
+    {
+      "key": "session",
+      "status": "ok",
+      "started_at": "2026-10-19T12:53:50.957+00:00",
+      "duration_ms": 1899,
+      "attempts": 0
+    },
+    {
+      "key": "navigate",
+      "status": "ok",
+      "started_at": "2026-10-19T12:53:52.856+00:00",
+      "duration_ms": 2036,
+      "attempts": 0
+    },
+    {
+      "key": "fill_form",
+      "status": "ok",
+      "started_at": "2026-10-19T12:53:54.895+00:00",
+      "duration_ms": 2018,
+      "attempts": 0
+    },
+    {
+      "key": "submit",
+      "status": "failed",
+      "started_at": "2026-10-19T12:53:56.913+00:00",
+      "duration_ms": 8105,
+      "attempts": 0,
+      "error": "ResolveError: could not resolve form.submit ()"
+    }
+  ],
+  "files": [],
+  "error": "submit: ResolveError: could not resolve form.submit ()"
+}

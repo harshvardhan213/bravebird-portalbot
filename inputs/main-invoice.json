@@ -1,0 +1,15 @@
+{
+  "portal": "github",
+  "repo": "harshvardhan213/demo",
+  "workflow": "Generate report",
+  "branch": "main",
+  "fields": {
+    "report_type": "invoice",
+    "month": "2026-09",
+    "customer": "acme"
+  },
+  "capture": {
+    "artifact": true,
+    "print_run_page": true
+  }
+}
